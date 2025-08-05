@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #c0392b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
+.section {
+  display: none;
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.section.active {
+  display: block;
+}
+
+form input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+}
