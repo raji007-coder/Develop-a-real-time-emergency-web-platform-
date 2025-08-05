@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency Response Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Emergency Response Coordination</h1>
+    <nav>
+      <button onclick="showSection('rescue')">Rescue Operations</button>
+      <button onclick="showSection('donations')">Resource Donations</button>
+      <button onclick="showSection('alerts')">Public Alerts</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Rescue Operations -->
+    <section id="rescue" class="section active">
+      <h2>Rescue Operations</h2>
+      <form id="rescueForm">
+        <input type="text" placeholder="Location" required>
+        <input type="text" placeholder="Issue (e.g. trapped people)" required>
+        <button type="submit">Report</button>
+      </form>
+      <ul id="rescueList"></ul>
+    </section>
+
+    <!-- Resource Donations -->
+    <section id="donations" class="section">
+      <h2>Resource Donations</h2>
+      <form id="donationForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Resource (e.g. food, clothes)" required>
+        <button type="submit">Donate</button>
+      </form>
+      <ul id="donationList"></ul>
+    </section>
+
+    <!-- Public Alerts -->
+    <section id="alerts" class="section">
+      <h2>Public Alerts</h2>
+      <form id="alertForm">
+        <input type="text" placeholder="Alert Title" required>
+        <input type="text" placeholder="Message" required>
+        <button type="submit">Post Alert</button>
+      </form>
+      <ul id="alertList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
